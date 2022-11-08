@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ice Cream Sundae Maker</string>
+    <string name="_0_00">$0.00</string>
+    <string name="the_works">The Works!</string>
+    <string name="reset">Reset</string>
+    <string name="order">Order</string>
+    <string name="oreos">Oreos</string>
+    <string name="marshmallows">Marshmallows</string>
+    <string name="m_amp_m"><![CDATA[M&M]]></string>
+    <string name="brownies">Brownies</string>
+    <string name="almonds">Almonds</string>
+    <string name="peanuts">Peanuts</string>
+    <string name="strawberries">Strawberries</string>
+    <string name="gummy_bears">Gummy Bears</string>
+    <string name="app_logo">app_logo</string>
+</resources>

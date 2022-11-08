@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crossedbgopa"
+
+    app:circularflow_defaultRadius="15dp"
+    app:circularflow_radiusInDP="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="114dp"
+        android:layout_height="51dp"
+
+        android:background="@drawable/edit_border"
+        android:hint="@string/_0_00"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#88F2FF"
+        android:textColorHint="#FFCDDE"
+        android:textSize="20sp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/theworks_button"
+        android:layout_width="86dp"
+        android:layout_height="90dp"
+
+        android:background="@drawable/my_button_border"
+        android:text="@string/the_works"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="242dp"
+
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="-20dp"
+        android:contentDescription="@string/app_logo"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/smoothsundaetransp" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:background="@drawable/my_button_border"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:background="@drawable/my_button_border"
+        android:text="@string/order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="27dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left_LinearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455">
+
+        <CheckBox
+            android:id="@+id/marshmallows_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marshmallows"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/mm_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m_amp_m"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/brownies_checkBox"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="@string/brownies"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/oreos_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oreos"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left_LinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="8dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456">
+
+        <CheckBox
+            android:id="@+id/almonds_checkBox"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="@string/almonds"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/peanuts_checkBox"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="@string/peanuts"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/strawberries_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strawberries"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/gummybears_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gummy_bears"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="78dp"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
