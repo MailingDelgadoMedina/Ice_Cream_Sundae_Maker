@@ -13,4 +13,17 @@
     <string name="strawberries">Strawberries</string>
     <string name="gummy_bears">Gummy Bears</string>
     <string name="app_logo">app_logo</string>
+    <string name="hot_fudge">Hot Fudge</string>
+    <string name="_1oz">1oz</string>
+    <string name="ice_cream">Ice Cream</string>
+    <string-array name="ice_cream_flavors">
+        <item>Vanilla</item>
+        <item>Chocolate</item>
+        <item>Strawberry</item>
+    </string-array>
+    <string-array name="ice_cream_size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
 </resources>

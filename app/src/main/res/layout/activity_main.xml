@@ -26,16 +26,18 @@
         app:flow_verticalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/theworks_button"
-        android:layout_width="86dp"
-        android:layout_height="90dp"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
 
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="26dp"
         android:background="@drawable/my_button_border"
         android:text="@string/the_works"
         android:textColor="#FFFFFF"
@@ -43,15 +45,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintEnd_toStartOf="@+id/size_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintVertical_bias="0.952" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="256dp"
-        android:layout_height="242dp"
+        android:layout_width="240dp"
+        android:layout_height="215dp"
 
         android:layout_marginStart="-30dp"
         android:layout_marginTop="-20dp"
@@ -59,7 +62,7 @@
         android:padding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -73,10 +76,10 @@
         android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintVertical_bias="0.955" />
 
     <Button
         android:id="@+id/order_button"
@@ -86,25 +89,134 @@
         android:text="@string/order"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="193dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/left_LinearLayout"
+        android:layout_width="149dp"
+        android:layout_height="192dp"
 
-        android:layout_marginEnd="27dp"
-
+        android:background="#FFFFFF"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/left_LinearLayout"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455">
+        app:layout_constraintVertical_bias="0.42">
+
+        <CheckBox
+            android:id="@+id/almonds_checkBox"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="@string/almonds"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/peanuts_checkBox"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="@string/peanuts"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/strawberries_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strawberries"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/gummybears_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gummy_bears"
+            android:textColor="#2F0092"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+
+        android:layout_width="202dp"
+        android:layout_height="46dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:indeterminate="false"
+        android:max="3"
+        android:progress="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <TextView
+        android:id="@+id/seekbar_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/hot_fudge"
+        android:textColor="#520260"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_spinner"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <TextView
+        android:id="@+id/hotfudge_oz_textView"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="37dp"
+        android:hint="@string/_1oz"
+        android:textColor="#673AB7"
+        android:textColorHint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="138dp"
+        android:layout_height="193dp"
+
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417">
 
         <CheckBox
             android:id="@+id/marshmallows_checkBox"
@@ -153,82 +265,31 @@
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/left_LinearLayout"
-        android:layout_width="0dp"
-        android:layout_height="194dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginEnd="8dp"
-
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456">
-
-        <CheckBox
-            android:id="@+id/almonds_checkBox"
-            android:layout_width="113dp"
-            android:layout_height="wrap_content"
-            android:text="@string/almonds"
-            android:textColor="#2F0092"
-            android:textColorHighlight="#E91E63"
-            android:textColorLink="#E91E63"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <CheckBox
-            android:id="@+id/peanuts_checkBox"
-            android:layout_width="117dp"
-            android:layout_height="wrap_content"
-            android:text="@string/peanuts"
-            android:textColor="#2F0092"
-            android:textColorHighlight="#E91E63"
-            android:textColorLink="#E91E63"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <CheckBox
-            android:id="@+id/strawberries_checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/strawberries"
-            android:textColor="#2F0092"
-            android:textColorHighlight="#E91E63"
-            android:textColorLink="#E91E63"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <CheckBox
-            android:id="@+id/gummybears_checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/gummy_bears"
-            android:textColor="#2F0092"
-            android:textColorHighlight="#E91E63"
-            android:textColorLink="#E91E63"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-    </LinearLayout>
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginBottom="78dp"
-        android:max="10"
-        android:progress="3"
+    <Spinner
+        android:id="@+id/size_spinner"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:background="#FFFEFE"
+        android:backgroundTint="#FFFFFF"
+        android:entries="@array/ice_cream_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Spinner
+        android:id="@+id/flavors_spinner"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:entries="@array/ice_cream_flavors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
