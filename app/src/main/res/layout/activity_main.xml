@@ -11,7 +11,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/total_text_view"
         android:layout_width="114dp"
         android:layout_height="51dp"
 
@@ -73,13 +73,15 @@
         android:layout_width="97dp"
         android:layout_height="51dp"
         android:background="@drawable/my_button_border"
+        android:onClick="handleReset"
         android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.955"
+        tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/order_button"
@@ -112,6 +114,7 @@
             android:id="@+id/almonds_checkBox"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/almonds"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -124,6 +127,7 @@
             android:id="@+id/peanuts_checkBox"
             android:layout_width="117dp"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/peanuts"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -136,6 +140,7 @@
             android:id="@+id/strawberries_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/strawberries"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -147,6 +152,7 @@
             android:id="@+id/gummybears_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/gummy_bears"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -161,8 +167,9 @@
         android:id="@+id/seekBar"
 
         android:layout_width="202dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:clickable="true"
+        android:contentDescription="@string/_0_00"
         android:focusable="true"
         android:indeterminate="false"
         android:max="3"
@@ -172,7 +179,8 @@
         app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.803"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/seekbar_label_textView"
@@ -222,6 +230,7 @@
             android:id="@+id/marshmallows_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/marshmallows"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -233,6 +242,7 @@
             android:id="@+id/mm_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/m_amp_m"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -244,6 +254,7 @@
             android:id="@+id/brownies_checkBox"
             android:layout_width="114dp"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/brownies"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
@@ -256,6 +267,7 @@
             android:id="@+id/oreos_checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="handleCheckboxes"
             android:text="@string/oreos"
             android:textColor="#2F0092"
             android:textColorHighlight="#E91E63"
