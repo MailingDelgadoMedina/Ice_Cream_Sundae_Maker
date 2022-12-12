@@ -134,7 +134,7 @@
             android:textColorLink="#E91E63"
             android:textSize="12sp"
             android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,UsingOnClickInXml" />
 
         <CheckBox
             android:id="@+id/strawberries_checkBox"
